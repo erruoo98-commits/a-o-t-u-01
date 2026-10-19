@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#514a43">
+  <meta name="description" content="A·O·T·U F/W 2026 — The Shape of Ordinary. Explore the new seasonal collection, styling ideas and editorial looks.">
+  <meta property="og:title" content="A·O·T·U — F/W 2026">
+  <meta property="og:description" content="The Shape of Ordinary. Explore the F/W 2026 collection.">
+  <meta property="og:image" content="images/hero/hero-01.png">
+  <title>A·O·T·U — F/W 2026</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+  <a class="skip-link" href="#top">Skip to content</a>
+
+  <!-- 상단 프로모션 띠 -->
+  <div class="announcement" aria-label="Promotion announcement">
+    <div class="announcement-track">
+      <span>MEMBERS ONLY: 10% OFF YOUR FIRST PURCHASE WITH CODE [WELCOME10] · FREE SHIPPING &amp; RETURNS · </span>
+      <span aria-hidden="true">MEMBERS ONLY: 10% OFF YOUR FIRST PURCHASE WITH CODE [WELCOME10] · FREE SHIPPING &amp; RETURNS · </span>
+      <span aria-hidden="true">MEMBERS ONLY: 10% OFF YOUR FIRST PURCHASE WITH CODE [WELCOME10] · FREE SHIPPING &amp; RETURNS · </span>
+    </div>
+  </div>
+
+  <!-- 헤더: PC = 서브메뉴(드롭다운) / Mobile = 슬라이드 메뉴(드로어) -->
+  <header class="site-header" id="siteHeader">
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a class="brand" href="#top" aria-label="A-O-T-U home">
+      <img src="images/header/logo.png" alt="A-O-T-U" width="468" height="156">
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li class="has-sub">
+          <a href="#collection" aria-haspopup="true" aria-expanded="false">Collections</a>
+          <ul class="submenu">
+            <li><a href="#collection">F/W 2026</a></li>
+            <li><a href="#collection">Modern Retro Accent</a></li>
+            <li><a href="#archive">The Archive Room</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="#shop" aria-haspopup="true" aria-expanded="false">Shop</a>
+          <ul class="submenu">
+            <li><a href="#shop" data-tab="tops">Tops</a></li>
+            <li><a href="#shop" data-tab="bottoms">Bottoms</a></li>
+            <li><a href="#shop" data-tab="outerwear">Outerwear</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <a href="#story" aria-haspopup="true" aria-expanded="false">Story</a>
+          <ul class="submenu">
+            <li><a href="#story">Stories from the Street</a></li>
+            <li><a href="#chapter">New Chapter</a></li>
+            <li><a href="#details">Shaped by Details</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="secondary-nav" aria-label="Shop navigation">
+      <a href="#collection">Lookbook</a>
+      <a href="#footer">Account</a>
+      <a href="#shop" class="bag-link">Bag (<span id="bagCount">0</span>)</a>
+    </nav>
+
+    <div class="header-icons">
+      <a href="#shop" aria-label="Search"><img src="images/header/icon-search.png" alt="" width="24" height="24"></a>
+      <a href="#footer" aria-label="Choose language"><img src="images/header/icon-language.png" alt="" width="24" height="24"></a>
+      <a href="#footer" aria-label="Account"><img src="images/header/icon-account.png" alt="" width="24" height="24"></a>
+    </div>
+  </header>
+
+  <!-- 모바일 슬라이드 메뉴 -->
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+  <nav class="drawer" id="drawer" aria-label="Mobile navigation" aria-hidden="true">
+    <div class="drawer-head">
+      <span class="drawer-title">MENU</span>
+      <button class="drawer-close" id="drawerClose" type="button" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="drawer-list">
+      <li>
+        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="sub-collections">Collections <span class="plus" aria-hidden="true"></span></button>
+        <ul class="drawer-sub" id="sub-collections">
+          <li><a href="#collection">F/W 2026</a></li>
+          <li><a href="#collection">Modern Retro Accent</a></li>
+          <li><a href="#archive">The Archive Room</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="sub-shop">Shop <span class="plus" aria-hidden="true"></span></button>
+        <ul class="drawer-sub" id="sub-shop">
+          <li><a href="#shop" data-tab="tops">Tops</a></li>
+          <li><a href="#shop" data-tab="bottoms">Bottoms</a></li>
+          <li><a href="#shop" data-tab="outerwear">Outerwear</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="drawer-toggle" type="button" aria-expanded="false" aria-controls="sub-story">Story <span class="plus" aria-hidden="true"></span></button>
+        <ul class="drawer-sub" id="sub-story">
+          <li><a href="#story">Stories from the Street</a></li>
+          <li><a href="#chapter">New Chapter</a></li>
+          <li><a href="#details">Shaped by Details</a></li>
+        </ul>
+      </li>
+      <li><a class="drawer-link" href="#collection">Lookbook</a></li>
+      <li><a class="drawer-link" href="#footer">Account &amp; Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="top">
+    <!-- 메인 비주얼 슬라이더: 자동 전환 + 수동(버튼·점·스와이프·키보드) -->
+    <section class="hero-slider" id="hero" aria-roledescription="carousel" aria-label="A-O-T-U F/W 2026 campaign">
+      <div class="slides" id="slides">
+        <article class="slide is-active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <div class="slide-media">
+            <img class="hero-photo" src="images/hero/hero-01.png" alt="Model wearing a soft green knit over a striped shirt" width="1440" height="868" fetchpriority="high">
+          </div>
+          <div class="slide-copy">
+            <p class="eyebrow">A·O·T·U | F/W 2026</p>
+            <h1>THE SHAPE<br>OF ORDINARY</h1>
+            <p class="slide-description">We find new beauty in the familiar:<br>through unexpected silhouettes, refined textures,<br>and a contemporary sense of proportion.<br>A·O·T·U transforms everyday forms<br>into something distinctly personal.</p>
+            <a class="text-link" href="#collection">VIEW LOOKBOOK <span>→</span></a>
+            <p class="hero-signature">A·O·T·U</p>
+          </div>
+        </article>
+
+        <article class="slide slide--looks tone-1" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <div class="slide-media">
+            <img src="images/hero/look-01.webp" alt="Model in a boxy jacket over a navy pleated skirt with a leather bag" width="700" height="1304" loading="lazy">
+            <img src="images/hero/look-02.webp" alt="Model in a hooded scarf, jacket and striped tote with wide denim" width="700" height="1304" loading="lazy">
+          </div>
+          <div class="slide-copy">
+            <p class="eyebrow">LOOK 01 | LAYERED BASICS</p>
+            <h2>SOFT LAYERS,<br>STRONG LINES</h2>
+            <p class="slide-description">Boxy jackets, pleated skirts and wide denim,<br>layered up for the in-between weather.</p>
+            <a class="text-link" href="#shop" data-tab="outerwear">SHOP OUTERWEAR <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="slide slide--looks tone-2" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <div class="slide-media">
+            <img src="images/hero/look-03.webp" alt="Model in a grey knit vest with a pleated midi skirt and black cap" width="700" height="1304" loading="lazy">
+            <img src="images/hero/look-04.webp" alt="Model in a long navy coat with white shorts, reading a newspaper" width="700" height="1304" loading="lazy">
+          </div>
+          <div class="slide-copy">
+            <p class="eyebrow">LOOK 02 | EVERYDAY TAILORING</p>
+            <h2>QUIET<br>PROPORTIONS</h2>
+            <p class="slide-description">Long coats, relaxed shorts and a pleated midi:<br>simple shapes with a little extra volume.</p>
+            <a class="text-link" href="#shop" data-tab="bottoms">SHOP BOTTOMS <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="slide slide--looks tone-3" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <div class="slide-media">
+            <img src="images/hero/look-05.webp" alt="Model in a pale green jacket and cap, stepping lightly" width="700" height="1304" loading="lazy">
+            <img src="images/hero/look-06.webp" alt="Model in a straw hat, cream cardigan and a long yellow skirt" width="700" height="1304" loading="lazy">
+          </div>
+          <div class="slide-copy">
+            <p class="eyebrow">LOOK 03 | SOFT COLOR</p>
+            <h2>A TOUCH<br>OF COLOR</h2>
+            <p class="slide-description">Pale green and butter yellow bring<br>a light, easy mood to the new season.</p>
+            <a class="text-link" href="#shop" data-tab="tops">SHOP TOPS <span>→</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="slider-controls">
+        <button class="slider-btn slider-prev" id="prevSlide" type="button" aria-label="Previous slide"><span aria-hidden="true">&#8249;</span></button>
+        <div class="slider-dots" id="sliderDots" role="group" aria-label="Choose slide"></div>
+        <button class="slider-btn slider-next" id="nextSlide" type="button" aria-label="Next slide"><span aria-hidden="true">&#8250;</span></button>
+        <button class="slider-btn slider-toggle" id="toggleSlide" type="button" aria-label="Pause slideshow"><span class="icon-pause" aria-hidden="true"></span></button>
+      </div>
+    </section>
+
+    <!-- 스트리트 스토리 -->
+    <section class="street-story" id="story" aria-label="Autumn street style">
+      <img class="street-image" src="images/story/street-story.png" alt="Three autumn street-style looks" width="1440" height="636" loading="lazy">
+      <div class="street-caption">
+        <p class="eyebrow">AUTUMN NOTES</p>
+        <h2>STORIES FROM THE STREET</h2>
+        <p>A subtle twist on traditional wardrobe staples.<br> We blend structured outerwear, soft fluid dresses, <br> and characterful accessories to create a look that feels both refined and delightfully spontaneous. </p>
+        <p class="season-note">IN BETWEEN SEASONS : VOL. 2</p>
+        <a class="mini-link" href="#collection">VIEW <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- 쇼핑: 탭으로 카테고리 전환 -->
+    <section class="shop-section" id="shop" aria-label="Shop the collection">
+      <div class="shop-head">
+        <p class="eyebrow">SHOP THE COLLECTION</p>
+        <div class="tabs" role="tablist" aria-label="Product categories">
+          <button class="tab is-active" id="tab-tops" type="button" role="tab" aria-selected="true" aria-controls="panel-tops" data-tab="tops">TOPS</button>
+          <button class="tab" id="tab-bottoms" type="button" role="tab" aria-selected="false" aria-controls="panel-bottoms" tabindex="-1" data-tab="bottoms">BOTTOMS</button>
+          <button class="tab" id="tab-outerwear" type="button" role="tab" aria-selected="false" aria-controls="panel-outerwear" tabindex="-1" data-tab="outerwear">OUTERWEAR</button>
+        </div>
+      </div>
+
+      <div class="tab-panel is-active" id="panel-tops" role="tabpanel" aria-labelledby="tab-tops" tabindex="0">
+        <div class="product-grid">
+          <article class="product-card" data-name="Essential Bow Top" data-price="89000" data-image="images/products/product-01.png" data-desc="A clean everyday top finished with a small bow. Easy to layer under jackets and knits.">
+            <button class="product-image" type="button" aria-label="Quick view: Essential Bow Top"><img src="images/products/product-01.png" alt="Essential Bow Top" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">01</span><h3>Essential Bow Top</h3><p class="price">₩89,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+          <article class="product-card" data-name="Layered Stripe Knit" data-price="129000" data-image="images/products/product-03.png" data-desc="A knit with a striped-shirt layered look, so one piece gives you two. Soft, light and easy to wear.">
+            <button class="product-image" type="button" aria-label="Quick view: Layered Stripe Knit"><img src="images/products/product-03.png" alt="Layered Stripe Knit" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">03</span><h3>Layered Stripe Knit</h3><p class="price">₩129,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+          <article class="product-card" data-name="Classic Check Blouse" data-price="109000" data-image="images/products/product-06.png" data-desc="A classic check blouse with a relaxed fit. Wear it open as a layer or buttoned up on its own.">
+            <button class="product-image" type="button" aria-label="Quick view: Classic Check Blouse"><img src="images/products/product-06.png" alt="Classic Check Blouse" width="226" height="250" loading="lazy"></button>
+            <span class="product-number">06</span><h3>Classic Check Blouse</h3><p class="price">₩109,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-bottoms" role="tabpanel" aria-labelledby="tab-bottoms" tabindex="0" hidden>
+        <div class="product-grid">
+          <article class="product-card" data-name="Polka Dot Shorts" data-price="99000" data-image="images/products/product-02.png" data-desc="Relaxed shorts with a playful polka dot print. A light, easy piece for in-between days.">
+            <button class="product-image" type="button" aria-label="Quick view: Polka Dot Shorts"><img src="images/products/product-02.png" alt="Polka Dot Shorts" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">02</span><h3>Polka Dot Shorts</h3><p class="price">₩99,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+          <article class="product-card" data-name="Pleated Mini Skirt" data-price="119000" data-image="images/products/product-04.png" data-desc="A pleated mini skirt with a neat shape and easy movement. Pairs well with knits and socks.">
+            <button class="product-image" type="button" aria-label="Quick view: Pleated Mini Skirt"><img src="images/products/product-04.png" alt="Pleated Mini Skirt" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">04</span><h3>Pleated Mini Skirt</h3><p class="price">₩119,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-panel" id="panel-outerwear" role="tabpanel" aria-labelledby="tab-outerwear" tabindex="0" hidden>
+        <div class="product-grid">
+          <article class="product-card" data-name="Soft Leather Jacket" data-price="249000" data-image="images/products/product-05.png" data-desc="A soft leather jacket with a slightly boxy shape. A statement layer that works every day.">
+            <button class="product-image" type="button" aria-label="Quick view: Soft Leather Jacket"><img src="images/products/product-05.png" alt="Soft Leather Jacket" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">05</span><h3>Soft Leather Jacket</h3><p class="price">₩249,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+          <article class="product-card" data-name="Everyday Collar Jacket" data-price="189000" data-image="images/products/product-07.png" data-desc="A collar jacket cut with room for layering. Light enough for early autumn, sharp enough for any day.">
+            <button class="product-image" type="button" aria-label="Quick view: Everyday Collar Jacket"><img src="images/products/product-07.png" alt="Everyday Collar Jacket" width="282" height="250" loading="lazy"></button>
+            <span class="product-number">07</span><h3>Everyday Collar Jacket</h3><p class="price">₩189,000</p>
+            <button class="view" type="button">VIEW <span>→</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 컬렉션 -->
+    <section class="collection" id="collection">
+      <div class="collection-heading"><p class="eyebrow">COLLECTION</p><h2>F/W 2026</h2><p>Modern Retro Accent</p></div>
+      <div class="collection-art">
+        <img src="images/collection/collection.png" alt="A-O-T-U collection with three styled models" width="1440" height="636" loading="lazy">
+        <a class="art-link pos-1" href="#shop">TOP →</a>
+        <a class="art-link pos-2" href="#shop">← DETAILS</a>
+        <a class="art-link pos-3" href="#shop">DETAILS →</a>
+        <a class="art-link pos-4" href="#shop">← TOP</a>
+        <a class="art-link pos-5" href="#shop">← TOP</a>
+        <a class="art-link pos-6" href="#shop">DETAILS →</a>
+      </div>
+    </section>
+
+    <!-- NEW CHAPTER -->
+    <section class="new-chapter" id="chapter">
+      <img src="images/chapter/new-chapter.png" alt="New chapter editorial with seasonal outfits" width="1440" height="636" loading="lazy">
+      <div class="chapter-copy">
+        <p class="eyebrow">NEW CHAPTER</p>
+        <h2>Discover our new seasonal collection and styling ideas.</h2>
+      </div>
+      <a class="chapter-view" href="#shop">VIEW <span>→</span></a>
+    </section>
+
+    <!-- 디테일 에디토리얼 -->
+    <section class="details-section" id="details" aria-label="Special look editorial">
+      <div class="detail-collage">
+        <img class="detail-photo photo-one" src="images/details/detail-01.png" alt="Close-up of a dark leather bag and jacket" width="519" height="348" loading="lazy">
+        <img class="detail-photo photo-two" src="images/details/detail-02.png" alt="Close-up of leather and styling details" width="381" height="393" loading="lazy">
+        <img class="detail-photo photo-three" src="images/details/detail-03.png" alt="Light blue skirt styling detail" width="338" height="416" loading="lazy">
+        <img class="detail-photo photo-four" src="images/details/detail-04.png" alt="Yellow shoes and patterned socks" width="521" height="315" loading="lazy">
+      </div>
+      <div class="details-copy">
+        <p class="eyebrow">SPECIAL LOOK | EDITORIAL</p>
+        <h2>SHAPED BY DETAILS</h2>
+        <p class="detail-description">The character of a look lives in<br>the details — texture, proportion,<br>and the unexpected contrast between<br>the familiar and the new.</p>
+        <h3>STYLE NOTES</h3>
+        <ul>
+          <li>01&nbsp; VOLUME &amp; PROPORTION</li>
+          <li>02&nbsp; SOFT CONTRAST</li>
+          <li>03&nbsp; EVERYDAY LAYERING</li>
+          <li>04&nbsp; REFINED DETAILS</li>
+        </ul>
+        <a class="qr-link" href="#shop" aria-label="Discover styling details"><img src="images/details/qr-code.png" alt="QR code" width="110" height="110" loading="lazy"><span>SCAN TO DISCOVER<br>Explore the full styling details.</span></a>
+      </div>
+    </section>
+
+    <!-- 아카이브 배너 -->
+    <section class="archive-banner" id="archive">
+      <img src="images/archive/archive-room.png" alt="The Archive Room, a vintage-inspired collaboration" width="1440" height="636" loading="lazy">
+      <div class="archive-copy">
+        <p>COLLABORATION &amp; SPECIAL CAPSULE</p>
+        <h2>THE ARCHIVE ROOM</h2>
+        <span>Where classic vintage meets modern daily comfort.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/footer/logo-white.png" alt="A-O-T-U Fashion Beyond Time" width="420" height="115" loading="lazy">
+        <p>We find beauty in the everyday.</p>
+        <p>Through thoughtful silhouettes, subtle details, and effortless layers, A·O·T·U reinterprets familiar pieces in a way that feels distinctly personal.</p>
+      </div>
+      <div class="footer-links"><h3>EXPLORE</h3><a href="#collection">Collections</a><a href="#collection">Lookbook</a><a href="#story">Story</a><a href="#footer">About A·O·T·U</a></div>
+      <div class="footer-links"><h3>CONTACT</h3><a href="#footer">Customer Service</a><a href="#footer">FAQ</a><a href="#footer">Shipping &amp; Returns</a><a href="#footer">Contact Us</a></div>
+      <div class="footer-social"><h3>SNS</h3>
+        <div>
+          <a href="#footer" aria-label="Facebook"><img src="images/footer/sns-facebook.png" alt="" width="34" height="34" loading="lazy"></a>
+          <a href="#footer" aria-label="Twitter"><img src="images/footer/sns-twitter.png" alt="" width="34" height="34" loading="lazy"></a>
+          <a href="#footer" aria-label="Instagram"><img src="images/footer/sns-instagram.png" alt="" width="34" height="34" loading="lazy"></a>
+          <a href="#footer" aria-label="Pinterest"><img src="images/footer/sns-pinterest.png" alt="" width="34" height="34" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">© 2026 A·O·T·U. All rights reserved. Privacy Policy · Terms of Use</div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden><span aria-hidden="true">&uarr;</span></button>
+
+  <!-- 상품 퀵뷰 모달 -->
+  <div class="modal" id="productModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="modal-close" type="button" aria-label="Close" data-close>&times;</button>
+      <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-info">
+        <p class="eyebrow">F/W 2026</p>
+        <h3 id="modalTitle"></h3>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <fieldset class="size-picker">
+          <legend>SIZE</legend>
+          <label><input type="radio" name="size" value="S"><span>S</span></label>
+          <label><input type="radio" name="size" value="M" checked><span>M</span></label>
+          <label><input type="radio" name="size" value="L"><span>L</span></label>
+        </fieldset>
+        <button class="add-btn" id="addToBag" type="button">ADD TO BAG</button>
+        <p class="modal-msg" id="modalMsg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
